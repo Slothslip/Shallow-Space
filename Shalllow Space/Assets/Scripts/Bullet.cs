@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
 
     public float speed = 20f;
-    public GameObject EnergyCharge;
+    public GameObject ExploisionOne;
 
     void Start()
     {
@@ -18,15 +18,15 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void OnCollisionEnter2D(Collision2D other)
     {
-        Destroy(other.gameObject);
+        //Destroy(other.gameObject);
         Destroy(gameObject);
         GameObject collidedWith = other.gameObject;
         float random = Random.Range(0, 100);
         if (collidedWith.tag == "AstroidBasic")
         {
             Destroy(other.gameObject);
-            //Vector3 spawnPos = transform.position + new Vector3(0f, 0f, 0f);
-            //Instantiate(EnergyCharge, spawnPos, Quaternion.identity);
+            Vector3 spawnPos = transform.position + new Vector3(0f, 0f, 0f);
+            Instantiate(ExploisionOne, spawnPos, Quaternion.identity);
         }
 
     }

@@ -28,8 +28,8 @@ public class EnemySpawner : MonoBehaviour
         {
             speed = Random.Range(.5f, 10f);
             float randomDb = Random.Range(1, 4);
-            float randomRx = Random.Range(-84, -73);
-            float randomRz = Random.Range(10, 40);
+            float randomRx = Random.Range(11, 14);
+            float randomRz = Random.Range(10, -6);
             if (randomDb == 1)
             {
                 GameObject AstroidZ = Instantiate<GameObject>(Astroid);
