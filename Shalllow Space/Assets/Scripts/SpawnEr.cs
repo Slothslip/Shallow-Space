@@ -43,7 +43,6 @@ public class SpawnEr : MonoBehaviour
                 StarTT.transform.position = pos;
             }
             ElapsedTime = 0;
-            print("Spawned");
         }
     }
 }

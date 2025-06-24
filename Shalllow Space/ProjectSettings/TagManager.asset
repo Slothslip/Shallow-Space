@@ -5,6 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - AstroidBasic
+  - Bulllet
+  - AstroidMetal
+  - Upgrade_TripShot
+  - Upgrade_Doubleshot
+  - Upgrade_Beem
+  - Upgrade_Life
+  - Upgrade_Sheild
+  - Upgrade_SheildThree
   layers:
   - Default
   - TransparentFX

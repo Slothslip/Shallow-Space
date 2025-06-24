@@ -5,6 +5,7 @@ using UnityEngine;
 public class LazerBehavior : MonoBehaviour
 {
     public float speed = 10f;
+    public GameObject Zelf;
 
     public GameObject ExploisionOne;
     // Start is called before the first frame update

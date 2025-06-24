@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -1459232890521504974}
   m_Layer: 0
   m_Name: Bulllet
-  m_TagString: Untagged
+  m_TagString: Bulllet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,6 +101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   ExploisionOne: {fileID: 5830810583426102224, guid: 1b02e6a2cbc822446937967156643a69, type: 3}
+  Sc: {fileID: 0}
+  SoundEffect: {fileID: 9214129727598082745, guid: ee224a9888d8269498f413586939bf4a, type: 3}
 --- !u!50 &-1488528416252941367
 Rigidbody2D:
   serializedVersion: 4

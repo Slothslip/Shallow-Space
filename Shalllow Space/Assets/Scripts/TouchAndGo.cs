@@ -85,7 +85,7 @@ public class TouchAndGo : MonoBehaviour {
 				else if (elapsedTime > reloadTime && WeaponType == 3)
 				{
 					Vector3 spawnPos = transform.position;
-					spawnPos += new Vector3(5f, -.4f, 0);
+					spawnPos += new Vector3(10f, -.4f, 0);
 					Instantiate(LazerPrefab, spawnPos, Quaternion.identity);
 
 					reloadTime = 0.1f;
@@ -123,6 +123,30 @@ public class TouchAndGo : MonoBehaviour {
 
 		if (isMoving)
 			previousDistanceToTouchPos = (touchPosition - transform.position).magnitude;
+
+	}
+
+	void OnCollisionEnter2D(Collision2D other)
+	{
+		//Destroy(other.gameObject);
+		GameObject collidedWith = other.gameObject;
+		float random = Random.Range(0, 100);
+		if (collidedWith.tag == "Upgrade_Doubleshot")
+		{
+			Destroy(other.gameObject);
+			WeaponType = 1;
+		}
+		else if (collidedWith.tag == "Upgrade_TripShot")
+		{
+			Destroy(other.gameObject);
+			WeaponType = 2;
+		}
+		else if (collidedWith.tag == "Upgrade_Beem")
+		{
+			Destroy(other.gameObject);
+			WeaponType = 3;
+		}
+
 
 	}
 }

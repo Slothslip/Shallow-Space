@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 5279081220317881344}
   - component: {fileID: 8846698393293156054}
   - component: {fileID: 5643025144268712726}
+  - component: {fileID: 9150841553592762815}
   m_Layer: 0
   m_Name: AstoidMetal
-  m_TagString: Untagged
+  m_TagString: AstroidMetal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,7 +114,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 2
 --- !u!114 &8846698393293156054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,3 +163,19 @@ CircleCollider2D:
   m_Offset: {x: -0.1, y: 0}
   serializedVersion: 2
   m_Radius: 1
+--- !u!114 &9150841553592762815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5830967794719512988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc430437ece4a6f4ea8e33003f4a04a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ast_lives: 0
+  Zelf: {fileID: 5830967794719512988}
+  ExploisionOne: {fileID: 5830810583426102224, guid: 1b02e6a2cbc822446937967156643a69, type: 3}
+  MSpeed: 5
